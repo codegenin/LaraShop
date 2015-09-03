@@ -26,7 +26,7 @@ class Product extends Model
 
     /**
      * A product belongs to a category
-     * 
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function category()
