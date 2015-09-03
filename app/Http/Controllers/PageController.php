@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -15,8 +16,9 @@ class PageController extends Controller
      */
     public function index()
     {
+        $categories = Category::all(['name']);
         $page = 'home';
-        return view('pages.home', compact('page'));
+        return view('pages.home', compact('categories', 'page'));
     }
 
     public function search($query)

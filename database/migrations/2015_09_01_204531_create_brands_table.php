@@ -15,6 +15,8 @@ class CreateBrandsTable extends Migration
         Schema::create('brands', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name', 255)->unique();
+            $table->integer('category_id');
+            $table->integer('products_count');
             $table->timestamps();
             $table->string('created_at_ip');
             $table->string('updated_at_ip');
