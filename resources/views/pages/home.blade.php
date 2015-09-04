@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Welcome :: eShopper
+@endsection
+
 @section('content')
     <div class="features_items"><!--features_items-->
         <h2 class="title text-center">Features Items</h2>

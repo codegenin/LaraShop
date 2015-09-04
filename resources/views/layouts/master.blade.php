@@ -30,7 +30,7 @@
 @include('layouts.header')
 
 {{-- Slide Section --}}
-@include('layouts.slider')
+{{--@include('layouts.slider')--}}
 
 <section>
     <div class="container">
